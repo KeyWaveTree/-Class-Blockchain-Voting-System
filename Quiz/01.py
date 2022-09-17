@@ -4,7 +4,7 @@ app = Flask(__name__)
 chain = []
 cnt = 0
 
-
+#어떤 정보를 이을것인가? 지정자: 어노테이션 java와의 어노테이션은 다름
 @app.route('/list', methods=['GET'])
 def vote_list():
     return jsonify(chain)
